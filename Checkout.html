@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'spartan',sans-serif;
+
+}
+.section-p1{
+	padding:40px 80px;
+}
+.section-m1{
+	margin:40px 0;
+
+}
+
+button.normal{
+	font-size: 14px;
+	font-weight:50px;
+	padding:15px 30px ;
+	color:rgb(87, 10, 10);
+	font-size: 20px;
+	background-color:white;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+}
+
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between ;
+	padding:20px 80px;
+	background: rgb(203, 215, 228);
+	box-shadow: 0 5px 15px rgba(45, 39, 39, 0.642)
+	index 999;
+	position :sticky
+	top 0;
+	left: 0;
+
+}
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+#navbar li{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+#navbar li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a;
+
+}
+#navbar li a:hover{
+	color:skyblue;
+
+}
+#navbar li a.line::after{
+	content:"";
+	width:30%;
+	height: 2px;
+	background: rgb(134, 208, 237);
+	position: absolute;
+	bottom: -4px;
+	left:20px;
+
+
+}
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 5 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 14px;
+}
+
+.container {
+  background-color: #8fd8ec;
+  padding: 5px 20px 15px 20px;
+  border: 2px solid rgb(22, 18, 18);
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #95abf5;
+  color: white;
+  padding: 20px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #4845a0;
+}
+
+a {
+  color: #cfe0ee;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+<link rel="stylesheet" href="style2.css"/>
+
+</head>
+<body>
+    
+    <header>
+        <head>
+            <title>KOREAN MART</title>
+            <link rel="stylesheet" href="style2.css">
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+             <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+           
+        </head>
+        <body class="">
+            
+            <div class="container">
+                <header>
+                    <div class="shopping">
+                        <ul id="navbar">
+                          <li><a  href="home.html">Home</a></li>
+                          <li><a href="shop.html">Shop</a></li>
+                          <li><a href="howto.html">How To Order</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+        </div>        
+   </header>
+
+  <div class="col-75">
+    <div class="container">
+      <form action="Home.html">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Iyana S. Espinosa">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="espinosa@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i>@ Address</label>
+            <input type="text" id="address" name="address" placeholder="#13 Esteban North Dalandanan">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Valenzuela">
+          </div>
+
+          
+          
+        </div class="tot" >
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          <div id="checkout">
+            <h3>Checkout</h3>
+        
+            
+        </label>
+        <input id="place-order-btn" type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+
+<script>
+    // Function to get query parameters
+    function getQueryParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+            items: JSON.parse(decodeURIComponent(params.get('items'))),
+            total: params.get('total')
+        };
+    }
+
+    // Function to display cart items and total on checkout page
+    function displayCheckoutCart() {
+        const { items, total } = getQueryParams();
+        const checkoutItems = document.getElementById('checkout-items');
+        const checkoutTotal = document.getElementById('checkout-total');
+
+        items.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+            checkoutItems.appendChild(li);
+        });
+
+        checkoutTotal.textContent = total;
+    }
+
+    // Function to handle placing the order
+    function placeOrder() {
+        alert('THANKYOU FOR ORDERING<3');
+        // Clear cart data (optional, depends on your app flow)
+        window.location.href = 'Home.html'; // Redirect to home page or any other page
+    }
+
+    // Add event listener to the Place Order button
+    document.getElementById('place-order-btn').addEventListener('click', placeOrder);
+
+    // Display cart items and total on page load
+    window.onload = displayCheckoutCart;
+</script>
+</body>
+</html>
